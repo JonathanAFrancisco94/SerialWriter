@@ -1,0 +1,14 @@
+C:\Users\JFRAN\Documents\Visual Studio 2013\Projects\SerialWriter\SerialWriter\bin\Release\SerialWriter.exe.config
+C:\Users\JFRAN\Documents\Visual Studio 2013\Projects\SerialWriter\SerialWriter\bin\Release\SerialWriter.exe
+C:\Users\JFRAN\Documents\Visual Studio 2013\Projects\SerialWriter\SerialWriter\bin\Release\SerialWriter.pdb
+C:\Users\JFRAN\Documents\Visual Studio 2013\Projects\SerialWriter\SerialWriter\bin\Release\MetroFramework.Design.dll
+C:\Users\JFRAN\Documents\Visual Studio 2013\Projects\SerialWriter\SerialWriter\bin\Release\MetroFramework.dll
+C:\Users\JFRAN\Documents\Visual Studio 2013\Projects\SerialWriter\SerialWriter\bin\Release\MetroFramework.Fonts.dll
+C:\Users\JFRAN\Documents\Visual Studio 2013\Projects\SerialWriter\SerialWriter\obj\Release\SerialWriter.FormUI.frmLoadingScreen.resources
+C:\Users\JFRAN\Documents\Visual Studio 2013\Projects\SerialWriter\SerialWriter\obj\Release\SerialWriter.FormUI.frmMessageBox.resources
+C:\Users\JFRAN\Documents\Visual Studio 2013\Projects\SerialWriter\SerialWriter\obj\Release\SerialWriter.mtrfrmSerialWriterMain.resources
+C:\Users\JFRAN\Documents\Visual Studio 2013\Projects\SerialWriter\SerialWriter\obj\Release\SerialWriter.Properties.Resources.resources
+C:\Users\JFRAN\Documents\Visual Studio 2013\Projects\SerialWriter\SerialWriter\obj\Release\SerialWriter.csproj.GenerateResource.Cache
+C:\Users\JFRAN\Documents\Visual Studio 2013\Projects\SerialWriter\SerialWriter\obj\Release\SerialWriter.exe
+C:\Users\JFRAN\Documents\Visual Studio 2013\Projects\SerialWriter\SerialWriter\obj\Release\SerialWriter.pdb
+C:\Users\JFRAN\Documents\Visual Studio 2013\Projects\SerialWriter\SerialWriter\obj\Release\SerialWriter.csprojResolveAssemblyReference.cache
