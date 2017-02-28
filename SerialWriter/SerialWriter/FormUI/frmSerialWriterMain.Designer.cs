@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mtrfrmSerialWriterMain));
             this.spBarcodeScanner = new System.IO.Ports.SerialPort(this.components);
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.tsmFile = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,6 +53,7 @@
             this.tSmiLight = new System.Windows.Forms.ToolStripMenuItem();
             this.tSmiDark = new System.Windows.Forms.ToolStripMenuItem();
             this.tSmiScreenshot = new System.Windows.Forms.ToolStripMenuItem();
+            this.tSmiOpenPath = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.tSmiAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.plTop = new System.Windows.Forms.Panel();
@@ -137,7 +139,8 @@
             this.tSmiConfiguration,
             this.tSmiStyle,
             this.themeToolStripMenuItem,
-            this.tSmiScreenshot});
+            this.tSmiScreenshot,
+            this.tSmiOpenPath});
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
             this.settingsToolStripMenuItem.Size = new System.Drawing.Size(70, 23);
             this.settingsToolStripMenuItem.Text = "Settings";
@@ -258,6 +261,13 @@
             this.tSmiScreenshot.Text = "Screenshot";
             this.tSmiScreenshot.Click += new System.EventHandler(this.tSmiScreenshot_Click);
             // 
+            // tSmiOpenPath
+            // 
+            this.tSmiOpenPath.Name = "tSmiOpenPath";
+            this.tSmiOpenPath.Size = new System.Drawing.Size(162, 24);
+            this.tSmiOpenPath.Text = "Open Path";
+            this.tSmiOpenPath.Click += new System.EventHandler(this.tSmiOpenPath_Click);
+            // 
             // tsmHelp
             // 
             this.tsmHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -269,7 +279,7 @@
             // tSmiAbout
             // 
             this.tSmiAbout.Name = "tSmiAbout";
-            this.tSmiAbout.Size = new System.Drawing.Size(116, 24);
+            this.tSmiAbout.Size = new System.Drawing.Size(152, 24);
             this.tSmiAbout.Text = "About";
             this.tSmiAbout.Click += new System.EventHandler(this.tSmiAbout_Click);
             // 
@@ -457,6 +467,7 @@
             this.ClientSize = new System.Drawing.Size(308, 498);
             this.Controls.Add(this.plTop);
             this.Controls.Add(this.menuStrip);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip;
             this.Name = "mtrfrmSerialWriterMain";
             this.Resizable = false;
@@ -518,5 +529,6 @@
         private MetroFramework.Controls.MetroLink mtrLSend;
         private System.Windows.Forms.Panel panel3;
         private MetroFramework.Controls.MetroLink mtrLAdd;
+        private System.Windows.Forms.ToolStripMenuItem tSmiOpenPath;
     }
 }

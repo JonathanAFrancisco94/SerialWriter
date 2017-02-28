@@ -142,6 +142,13 @@ namespace SerialWriter
         }
         private void mtrcboComPort_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (spBarcodeScanner.IsOpen)
+            {
+                spBarcodeScanner.Close();
+                spBarcodeScanner.PortName = String.Empty;
+                spBarcodeScanner.BaudRate = 0;
+            }
+
             spBarcodeScanner.PortName = mtrcboComPort.Text;
             spBarcodeScanner.BaudRate = 9600;
             spBarcodeScanner.Open();
@@ -269,6 +276,10 @@ namespace SerialWriter
 
 
         }
+        private void tSmiOpenPath_Click(object sender, EventArgs e)
+        {
+             Process.Start("explorer.exe", Application.StartupPath);
+        }
         private void tSmiClear_Click(object sender, EventArgs a)
         {
             preInitialize();
@@ -279,6 +290,7 @@ namespace SerialWriter
             _descriptionAbout = "Application Owner : SMART AUTOMATION" + System.Environment.NewLine +
                 "Application Name  : SMART SERIAL WRITER" + System.Environment.NewLine +
                 "Version and Date  : 2.0v / Dec 1,2016" + System.Environment.NewLine +
+                "Language          : CSharp" + System.Environment.NewLine +
                 "Contact Person    : icychill29@yahoo.com";
             frmMessageBox messageBox = new frmMessageBox(_descriptionAbout);
             messageBox.Show();
@@ -297,7 +309,7 @@ namespace SerialWriter
             {
                 Directory.CreateDirectory(newFolder);
             }
-
+            this.Hide();
             Size sz = Screen.PrimaryScreen.Bounds.Size;
             IntPtr hDesk = GetDesktopWindow();
             IntPtr hSrce = GetWindowDC(hDesk);
@@ -313,6 +325,7 @@ namespace SerialWriter
             bmp.Save(@_newFile + ".png");
             bmp.Dispose();
             this.mtrlblSendResult.Text = "ScreenCapture " + _newPicNameTimeDate;
+            this.Show();
         }
         #region ColorStyle
         private void blueToolStripMenuItem_Click(object sender, EventArgs e)
@@ -456,6 +469,7 @@ namespace SerialWriter
         [DllImport("user32.dll")]
         public static extern IntPtr GetWindowDC(IntPtr ptr);
         #endregion
+
                 
     }
 }
